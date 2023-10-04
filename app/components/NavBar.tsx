@@ -3,7 +3,8 @@ import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'Resume', href: '/Maxwell_Mendenhall_Resume.pdf' }
+    { name: 'Resume', href: '/Maxwell_Mendenhall_Resume.pdf' },
+    { name: 'Github', href: 'https://github.com/MaxwellMendenhall' }
   ]
 
 const NavBar: FC = () => {

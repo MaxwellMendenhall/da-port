@@ -18,7 +18,7 @@ const posts: Post[] = [
         title: 'Trading Algo',
         href: '#',
         description:
-            'Developed a trading algorithm in C# and displayed the analytics behind it using Flask, MySQL, Authentication, and Chart.js.',
+            'Developed a trading algorithm in C# and connected it to Ninja Traders API. Displayed the analytics behind it using Flask, MySQL, Authentication, and Chart.js.',
         category: { title: 'Take me there', href: 'https://flask-production-9344.up.railway.app' },
     },
     {
@@ -26,7 +26,7 @@ const posts: Post[] = [
         title: 'Computer Attacks',
         href: '#',
         description:
-            'Practive Spectre Attacks, Collision Attacks, and Cryptography.',
+            'Explore key cybersecurity concepts through hands-on exercises on Spectre attacks, collision attacks, and cryptography techniques. Gain insights into speculative execution vulnerabilities, hash collision phenomena, and the algorithms safeguarding data, enhancing your skills in these crucial cybersecurity areas.',
         category: { title: 'Take me there', href: '#' },
     },
     {
@@ -68,7 +68,7 @@ const BlogPosts: React.FC = () => {
                                         {post.title}
                                     </a>
                                 </h3>
-                                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
+                                <p className="mt-5 text-sm leading-6 text-gray-600">{post.description}</p>
                             </div>
                             <div className="relative mt-8 flex items-center gap-x-4">
                                 <div className="text-sm leading-6">
