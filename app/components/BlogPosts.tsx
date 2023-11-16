@@ -23,18 +23,18 @@ const posts: Post[] = [
     },
     {
         id: 2,
-        title: 'Computer Attacks',
+        title: 'Pen Testing',
         href: '#',
         description:
-            'Explore key cybersecurity concepts through hands-on exercises on Spectre attacks, collision attacks, and cryptography techniques. Gain insights into speculative execution vulnerabilities, hash collision phenomena, and the algorithms safeguarding data, enhancing your skills in these crucial cybersecurity areas.',
-        category: { title: 'Take me there', href: '#' },
+            'Explored vulnerable machines and how to exploit them using concepts like remote code execution, reverse shells, hash-identyfing and cracking. Documented all my conducted pen tests.',
+        category: { title: 'Take me there', href: 'https://maxwells-organization-2.gitbook.io/ctf-notes/notes/pen-testing-tools-notes' },
     },
     {
         id: 3,
         title: 'Website to improve customer reach',
         href: '#',
         description:
-            'Developed and launched a static website, enhancing the business online presence and customer reach. Used basic HTML, CSS, with embedded JS form.',
+            'Developed and launched a website, enhancing the business online presence and customer reach. Used HTML, CSS, with embedded JS form.',
         category: { title: 'Take me there', href: 'https://www.thewrapshackwc.com' },
     },
     // More posts...
