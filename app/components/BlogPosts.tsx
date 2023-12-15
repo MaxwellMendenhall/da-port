@@ -15,7 +15,7 @@ type Post = {
 const posts: Post[] = [
     {
         id: 1,
-        title: 'Trading Algo',
+        title: 'Trading Algorithm',
         href: '#',
         description:
             'Developed a trading algorithm in C# and connected it to Ninja Traders API. Displayed the analytics behind it using Flask, MySQL, Authentication, and Chart.js.',
@@ -23,10 +23,10 @@ const posts: Post[] = [
     },
     {
         id: 2,
-        title: 'Pen Testing',
+        title: 'Machine Learning for Trading Algorithm',
         href: '#',
         description:
-            'Explored vulnerable machines and how to exploit them using concepts like remote code execution, reverse shells, hash-identyfing and cracking. Documented all my conducted pen tests.',
+            'This GitHub project focuses on optimizing an automated trading algorithm using a custom-built logistic regression model, aiming to enhance trading performance through advanced features and machine learning techniques.',
         category: { title: 'Take me there', href: 'https://maxwells-organization-2.gitbook.io/ctf-notes/notes/pen-testing-tools-notes' },
     },
     {

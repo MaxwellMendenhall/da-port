@@ -7,13 +7,6 @@ import React, { useState } from 'react';
 import BlogPosts from './components/BlogPosts';
 import NavBar from "./components/NavBar";
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
-
 const Example: React.FC = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
