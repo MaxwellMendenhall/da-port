@@ -27,7 +27,7 @@ const posts: Post[] = [
         href: '#',
         description:
             'This GitHub project focuses on optimizing an automated trading algorithm using a custom-built logistic regression model, aiming to enhance trading performance through advanced features and machine learning techniques.',
-        category: { title: 'Take me there', href: 'https://maxwells-organization-2.gitbook.io/ctf-notes/notes/pen-testing-tools-notes' },
+        category: { title: 'Take me there', href: 'https://github.com/MaxwellMendenhall/Trading_Algo_Logistic_Regression' },
     },
     {
         id: 3,
