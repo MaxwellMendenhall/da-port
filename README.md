@@ -15,6 +15,8 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+![Portolio Image](public/PortSS.png "Example of what the portolio looks like.")
+
 <pre>
            _          __________                              _,
      _.-(_)._     ."          ".      .--""--.          _.-{__}-._
