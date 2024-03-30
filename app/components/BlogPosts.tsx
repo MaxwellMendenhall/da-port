@@ -18,16 +18,16 @@ const posts: Post[] = [
         title: 'Trading Algorithm',
         href: '#',
         description:
-            'Developed a trading algorithm in C# and connected it to Ninja Traders API. Displayed the analytics behind it using Flask, MySQL, Authentication, and Chart.js.',
-        category: { title: 'Take me there', href: 'https://flask-production-9344.up.railway.app' },
+            'Developed trading algorithms in C#, for Ninja Trader. Served pre-trained machine learning models via API for optimization of exit points for strategies.',
+        category: { title: 'Take me there', href: 'https://api.quantumtradebot.com' },
     },
     {
         id: 2,
         title: 'Machine Learning for Trading Algorithm',
         href: '#',
         description:
-            'This GitHub project focuses on optimizing an automated trading algorithm using a custom-built logistic regression model, aiming to enhance trading performance through advanced features and machine learning techniques.',
-        category: { title: 'Take me there', href: 'https://github.com/MaxwellMendenhall/Trading_Algo_Logistic_Regression' },
+            'This GitHub project focuses on the backtesting of trading strategies, with machine learning being incorporated for optimizing strategy exit times and maximizing profit.',
+        category: { title: 'Take me there', href: 'https://github.com/MaxwellMendenhall/backtest-with-machine-learning' },
     },
     {
         id: 3,
