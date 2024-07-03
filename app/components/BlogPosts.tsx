@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from './VideoModal';
 
 // Define the TypeScript types for the data
 type Post = {
@@ -10,43 +11,54 @@ type Post = {
         title: string;
         href: string;
     };
+    mediaUrl: string;
 };
 
 const posts: Post[] = [
     {
         id: 1,
-        title: 'Trading Algorithm',
+        title: 'Nember',
         href: '#',
         description:
-            'Developed trading algorithms in C#, for Ninja Trader. Served pre-trained machine learning models via API for optimization of exit points for strategies.',
-        category: { title: 'Take me there', href: 'https://api.quantumtradebot.com' },
+            'Machine learning application embedded to work in tandem with any NinjaScript strategy. Increasing profit and reducing drawdown by 50% to as much as 300%.',
+        category: { title: 'Take me there', href: 'https://github.com/MaxwellMendenhall/Nember' },
+        mediaUrl: 'demo.mp4',
     },
     {
         id: 2,
-        title: 'Machine Learning for Trading Algorithm',
+        title: 'ML-Backtest App',
         href: '#',
         description:
-            'This GitHub project focuses on the backtesting of trading strategies, with machine learning being incorporated for optimizing strategy exit times and maximizing profit.',
+            'Simple to use/deploy docker application that offers a no-code solution for the ML-Backtest Python library.',
         category: { title: 'Take me there', href: 'https://github.com/MaxwellMendenhall/backtest-with-machine-learning' },
+        mediaUrl: 'ml-backtest-app-demo.mp4',
     },
     {
         id: 3,
-        title: 'Website to improve customer reach',
+        title: 'Tailored Film Studio',
         href: '#',
         description:
-            'Developed and launched a website, enhancing the business online presence and customer reach. Used HTML, CSS, with embedded JS form.',
+            'A website to improve customer reach, attracting an additional 50+ customers per week for a local business.',
         category: { title: 'Take me there', href: 'https://www.thewrapshackwc.com' },
+        mediaUrl: 'tailored-film-studio.mp4',
     },
-    // More posts...
 ];
 
 const BlogPosts: React.FC = () => {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [selectedPost, setSelectedPost] = useState<Post | null>(null);
+
+    const handleVideoClick = (post: Post) => {
+        setSelectedPost(post);
+        setModalIsOpen(true);
+    };
+
     return (
         <div className="py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Maxwell Mendenhall</h2>
-                    <p className="mt-2 text-lg leading-8 text-gray-600">
+                    <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Maxwell Mendenhall</h2>
+                    <p className="mt-2 text-lg leading-8 text-white">
                         Studying Computer Science, White Collar Crime, and Computer Security.
                     </p>
                 </div>
@@ -61,26 +73,29 @@ const BlogPosts: React.FC = () => {
                                     {post.category.title}
                                 </a>
                             </div>
-                            <div className="group relative">
-                                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                                    <a href={post.href}>
-                                        <span className="absolute inset-0" />
-                                        {post.title}
-                                    </a>
-                                </h3>
-                                <p className="mt-5 text-sm leading-6 text-gray-600">{post.description}</p>
-                            </div>
-                            <div className="relative mt-8 flex items-center gap-x-4">
-                                <div className="text-sm leading-6">
-                                    <p className="font-semibold text-gray-900">
+                            <div className="group relative mt-4">
+                                <video
+                                    src={post.mediaUrl}
+                                    title={post.title}
+                                    className="w-full max-w-none object-cover aspect-w-16 aspect-h-9 cursor-pointer"
+                                    autoPlay
+                                    muted
+                                    loop
+                                    controls={false}
+                                    playsInline
+                                    onClick={() => handleVideoClick(post)}
+                                />
+                                <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
 
-                                    </p>
-                                </div>
+                                    {post.title}
+                                </h3>
+                                <p className="mt-5 text-sm leading-6 text-white">{post.description}</p>
                             </div>
                         </article>
                     ))}
                 </div>
             </div>
+            {selectedPost && <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} post={selectedPost} />}
         </div>
     );
 }

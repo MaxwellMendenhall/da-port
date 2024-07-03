@@ -3,8 +3,8 @@ import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'Resume', href: '/Maxwell_Mendenhall_Resume.pdf' },
-    { name: 'Github', href: 'https://github.com/MaxwellMendenhall' }
+    { name: 'Github', href: 'https://github.com/MaxwellMendenhall' },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/maxwell-mendenhall-317ba61b6/'}
   ]
 
 const NavBar: FC = () => {
@@ -25,7 +25,7 @@ const NavBar: FC = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white">
                 {item.name}
               </a>
             ))}

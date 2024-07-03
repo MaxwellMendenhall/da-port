@@ -17,7 +17,7 @@ const Example: React.FC = () => {
   }, []);
 
   return (
-    <div style={{ position: 'relative', height: '100vh', overflow: 'hidden' }}>
+    <div style={{ position: 'relative', height: '100vh', overflow: 'auto' }}>
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -25,7 +25,7 @@ const Example: React.FC = () => {
         options={{
           background: {
             color: {
-              value: "#FFFFFF",
+              value: "#0C0A09",
             },
           },
           fpsLimit: 120,
@@ -53,10 +53,10 @@ const Example: React.FC = () => {
           },
           particles: {
             color: {
-              value: "#000000",
+              value: "#FFFFFF",
             },
             links: {
-              color: "#000000",
+              color: "#FFFFFF",
               distance: 150,
               enable: true,
               opacity: 0.5,
