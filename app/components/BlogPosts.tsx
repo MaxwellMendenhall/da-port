@@ -21,7 +21,7 @@ const posts: Post[] = [
         href: '#',
         description:
             'Machine learning application embedded to work in tandem with any NinjaScript strategy. Increasing profit and reducing drawdown by 50% to as much as 300%.',
-        category: { title: 'Take me there', href: 'https://github.com/MaxwellMendenhall/Nember' },
+        category: { title: 'Take me there', href: 'https://frontend-production-7f49.up.railway.app/' },
         mediaUrl: 'demo.mp4',
     },
     {
@@ -39,7 +39,7 @@ const posts: Post[] = [
         href: '#',
         description:
             'A website to improve customer reach, attracting an additional 50+ customers per week for a local business.',
-        category: { title: 'Take me there', href: 'https://www.thewrapshackwc.com' },
+        category: { title: 'Take me there', href: 'https://tailoredfilmstudio.com/' },
         mediaUrl: 'tailored-film-studio.mp4',
     },
 ];
