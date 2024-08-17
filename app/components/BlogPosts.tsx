@@ -39,7 +39,7 @@ const posts: Post[] = [
         href: '#',
         description:
             'A website to improve customer reach, attracting an additional 50+ customers per week for a local business.',
-        category: { title: 'Take me there', href: 'https://www.thewrapshackwc.com' },
+        category: { title: 'Take me there', href: 'https://tailoredfilmstudio.com/' },
         mediaUrl: 'tailored-film-studio.mp4',
     },
 ];
