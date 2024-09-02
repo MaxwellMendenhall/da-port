@@ -21,7 +21,7 @@ const posts: Post[] = [
         href: '#',
         description:
             'Machine learning application embedded to work in tandem with any NinjaScript strategy. Increasing profit and reducing drawdown by 50% to as much as 300%.',
-        category: { title: 'Take me there', href: 'https://frontend-production-7f49.up.railway.app/' },
+        category: { title: 'Take me there', href: 'https://nember.catalystanalytics.io' },
         mediaUrl: 'demo.mp4',
     },
     {
